@@ -19,7 +19,6 @@ Este proyecto resuelve el algoritmo de dos pasos de la presentación: encuentra 
 | `resultados/*_results.csv` | Ocho salidas `x,y,etiqueta`, una por tamaño; son compatibles con el formato de la libreta. |
 | `INFORME.md` | Explicación del código, experimento, equipo, resultados y uso ético de IA. |
 
-Hay **cinco archivos de código fuente** contando `experimentos.py` y la libreta original.
 
 ## Requisitos y ejecución
 
@@ -52,8 +51,6 @@ python3 experimentos.py todo
 
 También se pueden ejecutar por separado las acciones `compilar`, `generar`, `verificar`, `medir`, `resumir`, `graficar` y `salidas`. `medir` realiza la matriz experimental completa y después actualiza promedios, gráficas y CSV de etiquetas. Los tamaños, `k`, `epsilon` y `min_samples` están al principio de `experimentos.py`.
 
-Los resultados y gráficas ya incluidos provienen de mediciones hechas antes de separar los tres archivos; se conservan sin alterar. La separación no cambia la lógica ni el alcance del cronómetro. Para obtener mediciones de los tres ejecutables independientes, ejecuta `python3 experimentos.py medir`: esto **reemplaza** los CSV y gráficas experimentales existentes. `todo` también los reemplaza.
-
 ## Cómo comprobar la corrección
 
 ```bash
@@ -61,24 +58,3 @@ python3 experimentos.py verificar
 ```
 
 Esta acción compara las tres versiones con una implementación directa por fuerza bruta sobre puntos pequeños, incluidos duplicados y puntos cerca de divisiones. Comprueba tanto los conteos internos como las etiquetas del CSV. Durante `medir`, cada una de las 2,320 ejecuciones se compara por conteos y hash contra la versión serial del mismo conjunto de datos. El informe explica el experimento y sus límites.
-
-## Uso opcional de la libreta original
-
-La libreta original requiere NumPy, scikit-learn y Matplotlib. Si se usa para crear un CSV de, por ejemplo, 4,000 puntos, hay que ejecutar su primera celda y luego:
-
-```bash
-./dbscan_p2 4000_data.csv 4000_results.csv p2 4 4 0.03 10 1
-```
-
-Después se ejecuta la segunda celda de la libreta para visualizar el resultado del programa. Los CSV generados por `experimentos.py` tienen el mismo formato de entrada; sus gráficas SVG no dependen de esos paquetes.
-
-## Correspondencia con la presentación
-
-| Solicitud | Dónde está |
-|---|---|
-| Serial, P1 global y P2 con división espacial | `dbscan_serial.cpp`, `dbscan_p1.cpp`, `dbscan_p2.cpp`; explicación en `INFORME.md` |
-| Unir resultados de P2 sin errores en fronteras | Cada rectángulo escribe sus puntos y consulta vecinos del índice global; `verificar` comprueba el resultado. |
-| CSV de entrada y salida | `datos/`, `resultados/*_results.csv` y opción de salida del ejecutable |
-| Todos los tamaños, hilos, valores de `k` y diez repeticiones | `experimentos.py`, `resultados/tiempos_crudos.csv` |
-| Comparación, speedups, gráficas y datos experimentales | `resultados/resumen.csv`, `resultados/*.svg`, `INFORME.md` |
-| Descripción del código, equipo, análisis y uso ético de IA | `INFORME.md` |
