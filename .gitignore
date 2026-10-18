@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+dbscan
+dbscan_serial
+dbscan_p1
+dbscan_p2
+*.o

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="540" viewBox="0 0 940 540">
+<rect width="100%" height="100%" fill="white"/>
+<text x="470.0" y="35" text-anchor="middle" font-size="23">Speedup de P1 respecto a serial</text>
+<text x="105" y="83" font-size="18">P1: dominio completo</text>
+<path d="M 105 100 V 435 H 895" fill="none" stroke="#333"/>
+<line x1="105" y1="435.0" x2="895" y2="435.0" stroke="#dddddd" stroke-dasharray="4 4"/>
+<text x="97" y="439.0" text-anchor="end" font-size="12">0</text>
+<line x1="105" y1="401.5" x2="895" y2="401.5" stroke="#dddddd" stroke-dasharray="4 4"/>
+<text x="97" y="405.5" text-anchor="end" font-size="12">1</text>
+<line x1="105" y1="384.8" x2="895" y2="384.8" stroke="#bb5555" stroke-dasharray="4 4"/>
+<text x="97" y="388.8" text-anchor="end" font-size="12">1.5</text>
+<line x1="105" y1="100.0" x2="895" y2="100.0" stroke="#dddddd" stroke-dasharray="4 4"/>
+<text x="97" y="104.0" text-anchor="end" font-size="12">10</text>
+<text x="105.0" y="453" text-anchor="middle" font-size="12">20</text>
+<text x="217.9" y="453" text-anchor="middle" font-size="12">40</text>
+<text x="330.7" y="453" text-anchor="middle" font-size="12">80</text>
+<text x="443.6" y="453" text-anchor="middle" font-size="12">120</text>
+<text x="556.4" y="453" text-anchor="middle" font-size="12">140</text>
+<text x="669.3" y="453" text-anchor="middle" font-size="12">160</text>
+<text x="782.1" y="453" text-anchor="middle" font-size="12">180</text>
+<text x="895.0" y="453" text-anchor="middle" font-size="12">200</text>
+<polyline points="105.0,401.2 217.9,401.4 330.7,401.3 443.6,401.7 556.4,401.0 669.3,400.8 782.1,400.9 895.0,401.7" fill="none" stroke="#666666" stroke-width="2"/>
+<circle cx="105.0" cy="401.2" r="3" fill="#666666"/>
+<circle cx="217.9" cy="401.4" r="3" fill="#666666"/>
+<circle cx="330.7" cy="401.3" r="3" fill="#666666"/>
+<circle cx="443.6" cy="401.7" r="3" fill="#666666"/>
+<circle cx="556.4" cy="401.0" r="3" fill="#666666"/>
+<circle cx="669.3" cy="400.8" r="3" fill="#666666"/>
+<circle cx="782.1" cy="400.9" r="3" fill="#666666"/>
+<circle cx="895.0" cy="401.7" r="3" fill="#666666"/>
+<polyline points="105.0,273.1 217.9,271.5 330.7,268.1 443.6,252.4 556.4,258.4 669.3,268.4 782.1,263.3 895.0,271.1" fill="none" stroke="#2878b5" stroke-width="2"/>
+<circle cx="105.0" cy="273.1" r="3" fill="#2878b5"/>
+<circle cx="217.9" cy="271.5" r="3" fill="#2878b5"/>
+<circle cx="330.7" cy="268.1" r="3" fill="#2878b5"/>
+<circle cx="443.6" cy="252.4" r="3" fill="#2878b5"/>
+<circle cx="556.4" cy="258.4" r="3" fill="#2878b5"/>
+<circle cx="669.3" cy="268.4" r="3" fill="#2878b5"/>
+<circle cx="782.1" cy="263.3" r="3" fill="#2878b5"/>
+<circle cx="895.0" cy="271.1" r="3" fill="#2878b5"/>
+<polyline points="105.0,253.1 217.9,203.4 330.7,157.9 443.6,180.1 556.4,152.6 669.3,133.4 782.1,188.0 895.0,163.2" fill="none" stroke="#df7f13" stroke-width="2"/>
+<circle cx="105.0" cy="253.1" r="3" fill="#df7f13"/>
+<circle cx="217.9" cy="203.4" r="3" fill="#df7f13"/>
+<circle cx="330.7" cy="157.9" r="3" fill="#df7f13"/>
+<circle cx="443.6" cy="180.1" r="3" fill="#df7f13"/>
+<circle cx="556.4" cy="152.6" r="3" fill="#df7f13"/>
+<circle cx="669.3" cy="133.4" r="3" fill="#df7f13"/>
+<circle cx="782.1" cy="188.0" r="3" fill="#df7f13"/>
+<circle cx="895.0" cy="163.2" r="3" fill="#df7f13"/>
+<polyline points="105.0,260.6 217.9,209.6 330.7,184.4 443.6,181.8 556.4,177.0 669.3,167.8 782.1,195.8 895.0,178.8" fill="none" stroke="#39834f" stroke-width="2"/>
+<circle cx="105.0" cy="260.6" r="3" fill="#39834f"/>
+<circle cx="217.9" cy="209.6" r="3" fill="#39834f"/>
+<circle cx="330.7" cy="184.4" r="3" fill="#39834f"/>
+<circle cx="443.6" cy="181.8" r="3" fill="#39834f"/>
+<circle cx="556.4" cy="177.0" r="3" fill="#39834f"/>
+<circle cx="669.3" cy="167.8" r="3" fill="#39834f"/>
+<circle cx="782.1" cy="195.8" r="3" fill="#39834f"/>
+<circle cx="895.0" cy="178.8" r="3" fill="#39834f"/>
+<text x="500.0" y="475" text-anchor="middle" font-size="13">Miles de puntos</text>
+<text x="470.0" y="522" text-anchor="middle" font-size="15"><tspan fill="#666666">● 1 hilos</tspan>   <tspan fill="#2878b5">● 8 hilos</tspan>   <tspan fill="#df7f13">● 16 hilos</tspan>   <tspan fill="#39834f">● 32 hilos</tspan></text>
+</svg>
